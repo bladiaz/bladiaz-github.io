@@ -82,6 +82,100 @@ transition: all .3s ease-in-out;
   text-transform: uppercase;
 }
 
+/* TITULO DE LA WEB */
+
+html{
+  scroll-behavior: smooth;
+}
+
+section[id]{
+  scroll-margin-top: 70px;
+}
+
+section{
+/*position: fixed; */
+top: 0%;
+left: 0%;
+width: 100%;
+height: 80px;
+background: white;
+box-shadow: 0 4px 25px -22px black;
+z-index:2;
+}
+
+.header-content{
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 b{
+ color:rgba(248, 0, 0, 0.836);
+}
+
+.menu{
+  height: 80px;
+  background-color: white;
+  text-underline-position: from-font;
+}
+
+.menu nav{
+  height: 100%;
+  font-size: x-large;
+}
+
+.menu nav ul{
+  height: 100%;
+  display: flex;
+  list-style: none;
+
+}
+
+.menu nav ul li{
+  height: 100%;
+  margin: 0px 10px;
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: row-reverse
+}
+
+.text-menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color:rgb(255, 4, 4) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a{
+  color: rgb(255, 0, 0);
+  transition: color 300ms;
+}
+
+.menu nav ul li a:hover{
+  color: rgb(255, 0, 0);
+}
+
+.menu .text-menu-selected{
+color: #000;
+}
+
+
+
 /* TARJETA DE PRESENTACION */
 .card {
   box-sizing: border-box;
@@ -105,12 +199,6 @@ transition: all .3s ease-in-out;
   flex-wrap: wrap;
 }
 
-/* TITULO DE LA WEB */
-
-.text-header{
-  background-color: white;
-  color: #000;
-}
 
 /*ESTILO DE PERFIL*/
 .card0 {
@@ -355,7 +443,10 @@ footer{
 .footer-bottom span{
   text-transform: uppercase;
   opacity: .4;
-  font-weight: 200;
+  font-weight: 200px;
+  color: white;
 }
 
- media (max-width )
+ @media (max-width: 60px; ) {
+
+ }
