@@ -216,7 +216,7 @@ color: #000;
 @media screen and (max-width: 720px){
   .wrapper .card0{
     padding-top: 10px;  
-    width: 740px;
+    width: auto;
     margin: 5px 0 0 0;
     text-align: center;
     justify-content: center;
@@ -224,8 +224,8 @@ color: #000;
   }
 
   .flex-container .card {
-    width: 696px;
-    margin: 10px;
+    width: min-content;
+    margin: 19px;
   }
 }  
 
