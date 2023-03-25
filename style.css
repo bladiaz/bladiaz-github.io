@@ -239,6 +239,7 @@ color: #000;
 }
 
 .flex-container {
+  width: min-content;
   display:inline-flex;
   text-align: center;
   justify-content: center;
@@ -254,8 +255,8 @@ color: #000;
 }
 
 .card {
-  width: 90%;
-  margin: 20px;
+  width: 299px;
+  margin: 32px 70px 10px 60px;
   border-radius: 6px;
   overflow: hidden;
   background: linear-gradient(rgb(253, 71, 71), rgb(123, 134, 194));
