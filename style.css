@@ -127,6 +127,12 @@ z-index:2;
   text-underline-position: from-font;
 }
 
+.abrir-menu .phone{
+  width: 100px;
+  height: 80px;
+  background-color:#ffffff;
+}
+
 .abrir-menu,
 .cerrar-menu{
   display: none;
@@ -225,7 +231,7 @@ color: #000;
 
   .flex-container .card {
     width: min-content;
-    margin: 19px;
+    margin: 19px 20px 20px 90px ;
   }
 }  
 
