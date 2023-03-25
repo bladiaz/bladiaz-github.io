@@ -121,9 +121,15 @@ z-index:2;
 }
 
 .menu{
+  display: flex;
   height: 80px;
   background-color: white;
   text-underline-position: from-font;
+}
+
+.abrir-menu,
+.cerrar-menu{
+  display: none;
 }
 
 .menu nav{
@@ -173,38 +179,13 @@ z-index:2;
 color: #000;
 }
 
-
-
 /* TARJETA DE PRESENTACION */
-.card {
-  box-sizing: border-box;
-  padding: 5px 5px 5px 5px;
-  background-color: rgba(252, 247, 247, 0.5);
-  border: 10px #000b0c;
-  transition: width 2s, background-color 1s, box-shadow 1s;
-  border-radius: 10px;
-  color: black;
-  text-align: center;
-}
-
-.card:hover {
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 1);
-}
-
-.wrapper {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
 /*ESTILO DE PERFIL*/
 .card0 {
+  padding-top: 10px;
   background-color:white;
-  margin: 30px auto;
+  margin: 10px auto;
   width: 900px;
-  height: 600px;
   border-radius: 10px;
   box-shadow: 5px 5px 30px 7px rgba(255, 2, 2, 0.329), -5px -5px 30px 7px rgba(255, 255, 255, 0.616);
   cursor: pointer;
@@ -221,12 +202,33 @@ color: #000;
 
 .presentacion{
   background-color: white;
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
   }
 
 .prueba{
   width: 10%;
 }
+
+/* Celular SE  */
+@media screen and (max-width: 720px){
+  .wrapper .card0{
+    padding-top: 10px;  
+    width: 740px;
+    margin: 5px 0 0 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-container .card {
+    width: 696px;
+    margin: 10px;
+  }
+}  
+
 
 /*ESTILOS DE EXPERIENCIA LABORAL*/
 
@@ -457,7 +459,39 @@ footer{
   color: white;
 }
 
- @media (min-width;767px:)and(max-width;) {
-      .header-content{ width: 30px;}
-      .wrapper{ display: none;}
+@media screen and (max-width:650px) {
+   .abrir-menu,
+    .cerrar-menu{
+   display: block;
+  }
+
+  .nav{
+     opacity: 0;
+    visibility: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: auto;
+    right: 0;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgb( 0, 0, 0, .5);
+  }
+
+  .nav .visible{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-list{
+    flex-direction: column;
+    align-items: end;
+  }
+
  }
+
+
+
+
